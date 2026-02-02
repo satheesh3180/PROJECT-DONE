@@ -1,8 +1,8 @@
-# PROJECT-DONE
+#PROJECT DONE
 
 # Advanced Causal Inference with Double Machine Learning (DML)
 
-#  Project Overview
+##  Project Overview
 
 This project implements an **Advanced Double Machine Learning (DML)** framework to estimate causal treatment effects in the presence of **high‑dimensional confounding variables**. The goal is to demonstrate how DML outperforms traditional regression (OLS) when treatment assignment and outcomes are nonlinear and confounded.
 
@@ -10,7 +10,7 @@ The implementation closely follows the methodology proposed by **Chernozhukov et
 
 ---
 
-#  Objectives
+##  Objectives
 
 * Generate a **synthetic dataset** with:
 
@@ -26,7 +26,7 @@ The implementation closely follows the methodology proposed by **Chernozhukov et
 
 ---
 
-#  Dataset Description
+##  Dataset Description
 
 * **X**: 100‑dimensional confounder matrix sampled from a normal distribution
 * **T**: Binary treatment assigned via a nonlinear, confounded logistic function
@@ -40,9 +40,9 @@ This design intentionally violates linear modeling assumptions, making it ideal 
 
 ---
 
-#  Methodology
+##  Methodology
 
-#  Double Machine Learning (DML)
+###  Double Machine Learning (DML)
 
 * **Cross‑fitting** with 5 folds to avoid overfitting bias
 * **Nuisance models**:
@@ -56,14 +56,14 @@ This approach orthogonalizes nuisance errors, yielding a robust ATE estimate.
 
 ---
 
-# Baseline: Ordinary Least Squares (OLS)
+### Baseline: Ordinary Least Squares (OLS)
 
 * Linear regression of outcome on treatment and all confounders
 * Serves as a naive baseline under model misspecification
 
 ---
 
-#  Results Summary
+##  Results Summary
 
 | Metric              | Value                           |
 | ------------------- | ------------------------------- |
@@ -77,7 +77,7 @@ This approach orthogonalizes nuisance errors, yielding a robust ATE estimate.
 
 ---
 
-#  Visualization
+##  Visualization
 
 * Scatter plot showing **true heterogeneous treatment effects** against a key confounder
 * Horizontal line representing **DML estimated ATE**
@@ -89,7 +89,7 @@ This visualization confirms:
 
 ---
 
-#  Technologies Used
+##  Technologies Used
 
 * Python
 * NumPy, Pandas
@@ -98,7 +98,7 @@ This visualization confirms:
 
 ---
 
-#  Conclusion
+##  Conclusion
 
 This project demonstrates that:
 
@@ -106,16 +106,14 @@ This project demonstrates that:
 * Double Machine Learning provides **robust and unbiased causal estimates**
 * Cross‑fitting with machine learning models is critical for valid inference
 
- *DML is a powerful framework for modern causal inference problems involving complex, high‑dimensional data.**
+ **DML is a powerful framework for modern causal inference problems involving complex, high‑dimensional data.**
 
 ---
 
-# Future Improvements
+## Future Improvements
 
 * Extend to **Conditional Average Treatment Effect (CATE)** estimation
 * Compare with other causal methods (IPW, DR Learner, Causal Forests)
 * Apply to real‑world observational datasets
 
----
-
-###  Project Status: **Completed Successfully**
+###
